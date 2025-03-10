@@ -32,13 +32,45 @@ body {
   border-bottom-right-radius: 1em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 1em;
+  padding-right: 1em;
 }
 
 .website-logo {
   font-family: cursive;
   font-size: xx-large;
-  @media screen and (max-width: 600px) {
-    align-self: center;
-  }
+}
+
+.profile-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+img#user-image {
+  height: 90%;
+  border-radius: 50%;
+}
+
+#search-bar {
+  border: 1px solid var(--main-color);
+  font-size: large;
+  width: 40em;
+  border-radius: 1em;
+  height: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+  justify-self: center;
+}
+#search-bar:hover,
+#search-bar:focus {
+  border: 2px solid black;
+  outline: none;
+}
+#search-bar:focus {
+}
+
+.hidden {
+  display: none;
 }
