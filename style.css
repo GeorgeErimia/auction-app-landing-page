@@ -68,6 +68,9 @@ body {
 .website-logo {
   font-family: cursive;
   font-size: xxx-large;
+  @media screen and (max-width: 600px) {
+    align-self: center;
+  }
 }
 
 .sign-in-section {
@@ -75,15 +78,15 @@ body {
   padding: 1.5em;
 }
 
-.sign-in-header {
+.message-header {
   font-size: 3.5rem;
 }
 
-.sign-in-helper {
+.message-helper {
   color: rgba(0, 0, 0, 35%);
 }
 
-.sign-in-helper > a {
+.message-helper > a {
   color: var(--main-color);
   font-weight: bold;
 }
