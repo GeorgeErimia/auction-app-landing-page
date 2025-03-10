@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main flex-container-row">
+      <div class="sign-in flex-container-column">
+        <div class="website-logo">Auction Heaven</div>
+        <div class="flex-container-column sign-in-section">
+          <h1 class="sign-in-header">Create an account</h1>
+          <span class="sign-in-helper"
+            >Already have an account? <a href="login.html">Sign in</a></span
+          >
+          <form action="">
+            <div class="form-input-section flex-container-column">
+              <span class="form-input-text">E-mail</span>
+              <input
+                type="email"
+                name="email"
+                id="input-email"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="form-input-section flex-container-column">
+              <span class="form-input-text">Password</span>
+              <input
+                type="password"
+                name="password"
+                id="input-password"
+                placeholder="@#*%1234abcd"
+              />
+            </div>
+            <div class="form-buttons">
+              <button
+                type="submit"
+                class="btn btn-success"
+                id="btn-create-account"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="site-info flex-container-column">
+        <h1 class="site-header">The number one website for auctions</h1>
+        <p class="site-paragraph">
+          Don't let any of your unwanted things go to waste. There's always
+          someone who wants them. You just got to find them.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+</html>

@@ -1,0 +1,195 @@
+@import "../normalize.css";
+
+:root {
+  --main-color: #727d73;
+  --secondary-color: #aab99a;
+  --bg-color: #d0ddd0;
+  --other-color: #f0f0d7;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-size: small;
+  height: inherit;
+  background-color: white;
+  display: flex;
+  @media screen and (min-width: 600px) {
+    background-color: var(--bg-color);
+  }
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  @media screen and (min-width: 600px) {
+    display: flex;
+    margin: 10%;
+    height: auto;
+    /* border: 1px solid black; */
+    border-radius: 2em;
+    box-shadow: -5px 5px var(--secondary-color);
+  }
+}
+
+.sign-in {
+  @media screen and (min-width: 600px) {
+    background-color: white;
+    padding: 2em;
+    flex: 1;
+    justify-content: flex-start;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    @media (max-width: 1000px) {
+      border-radius: 2em;
+    }
+  }
+}
+
+.website-logo {
+  font-family: cursive;
+  font-size: xxx-large;
+}
+
+.sign-in-section {
+  height: 100%;
+  padding: 1.5em;
+}
+
+.sign-in-header {
+  font-size: 3.5rem;
+}
+
+.sign-in-helper {
+  color: rgba(0, 0, 0, 35%);
+}
+
+.sign-in-helper > a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+form {
+  margin-top: 1em;
+}
+
+.form-input-section {
+  align-items: space-between;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+
+.form-input-text {
+  font-size: 2em;
+}
+
+#input-email,
+#input-password {
+  width: 25em;
+  height: 2em;
+  border-radius: 0.5em;
+  border: 1px solid var(--main-color);
+  margin-top: 1em;
+}
+
+#input-email:focus,
+#input-password:focus {
+  background-color: var(--bg-color);
+  border-color: black;
+}
+
+#input-email {
+}
+
+#input-password {
+}
+
+.form-actions {
+  margin-top: 1.5em;
+}
+.form-actions-row {
+  justify-content: space-between;
+  width: 25em;
+}
+
+.form-remember {
+  justify-content: center;
+  margin-bottom: 1.1em;
+}
+
+#input-remember-me {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.remember-me-text {
+  font-size: 1em;
+  color: var(--main-color);
+}
+
+.forgot-password {
+}
+
+.forgot-password-text > a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.form-buttons {
+  margin-top: 2em;
+}
+
+.btn {
+  width: 7em;
+  height: 3em;
+  border-radius: 2em;
+  border: 1px solid var(--main-color);
+  font-size: large;
+}
+
+.btn-success {
+}
+
+.btn-danger {
+}
+
+#btn-sign-in {
+}
+
+.site-info {
+  background-color: var(--main-color);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  padding: 2em;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.site-header {
+}
+
+.site-paragraph {
+}
