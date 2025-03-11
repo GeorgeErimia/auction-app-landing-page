@@ -22,6 +22,8 @@ body {
   @media screen and (min-width: 600px) {
     background-color: var(--bg-color);
   }
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .page-header {
@@ -73,4 +75,51 @@ img#user-image {
 
 .hidden {
   display: none;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid black; */
+  width: 50vw;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.category:hover > .title {
+  color: var(--main-color);
+}
+
+.category:hover > img {
+  background-color: var(--other-color);
+}
+
+.category-thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 20%;
+  /* border: 1px solid var(--main-color); */
+  background-color: var(--secondary-color);
 }
