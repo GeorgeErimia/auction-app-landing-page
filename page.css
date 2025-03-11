@@ -17,11 +17,8 @@ html {
 body {
   font-size: small;
   height: inherit;
-  background-color: white;
+  background-color: var(--bg-color);
   display: flex;
-  @media screen and (min-width: 600px) {
-    background-color: var(--bg-color);
-  }
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -37,6 +34,13 @@ body {
   justify-content: space-between;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.hamburger-menu {
+  height: 100%;
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
 }
 
 .website-logo {
@@ -64,6 +68,9 @@ img#user-image {
   padding-left: 1em;
   padding-right: 1em;
   justify-self: center;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 #search-bar:hover,
 #search-bar:focus {
