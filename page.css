@@ -129,6 +129,13 @@ img#user-image {
 
 .title {
   text-align: center;
+  font-size: 150%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 100%;
+  }
+
+  text-wrap-mode:wrap;
 }
 
 .category:hover > .title {
@@ -148,6 +155,11 @@ img#user-image {
   border-radius: 20%;
   /* border: 1px solid var(--main-color); */
   background-color: var(--secondary-color);
+
+  @media screen and (max-width: 600px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .auctions-section {
