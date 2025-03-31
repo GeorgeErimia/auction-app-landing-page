@@ -20,3 +20,23 @@ if (registerButton !== null) {
 
 // Add hover effect to category lists
 let categories = document.querySelectorAll(".category");
+
+// Add link to homepage
+let linkToHomepage = document.querySelector("#link-to-home");
+if(linkToHomepage !== null) {
+  linkToHomepage.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location = "./home-page.html";
+  })
+}
+
+// Redirect Electronics category
+// TODO: Make all categories redirect to the proper page
+let electronicsCategory = document.querySelector("#Electronics");
+if(electronicsCategory !== null) {
+  electronicsCategory.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location = "./category-page.html";
+  })
+}
+

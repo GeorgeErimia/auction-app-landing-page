@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="page2.css" />
+    <!-- Use Page2.css for Optimized Styles -->
   </head>
   <body>
     <div class="page-header">
@@ -15,13 +16,13 @@
         class="hamburger-menu"
       />
       <h1 class="website-logo">Auction Heaven</h1>
-      <input
+      <!-- <input
         id="search-bar"
         type="text"
         name=""
         id=""
         placeholder="Search for auctions here"
-      />
+      /> -->
       <div class="profile-section">
         <div class="profile-dropdown"></div>
         <img
@@ -32,14 +33,29 @@
         />
       </div>
     </div>
-    <div class="side-menu">
-
+    <div class="search-section">
+      <input
+        class="search-bar"
+        type="search"
+        name=""
+        id=""
+        placeholder="Search for auctions here"
+      />
+      <input
+        class="location-selector"
+        type="search"
+        name=""
+        id=""
+        placeholder="Select your location"
+      />
+      <button class="search-button">Search</button>
+      <div class="dropdown-menu" id="closed">More filters</div>
     </div>
     <div class="page-body">
       <div class="category-section">
         <h1 class="section-title">Featured Categories</h1>
-        <div class="list-section">
-          <div class="category">
+        <div class="category-list">
+          <div class="category" id="Electronics">
             <img
               class="category-thumbnail"
               src="https://images.samsung.com/is/image/samsung/p6pim/africa_en/sm-s721blbbafb/gallery/africa-en-galaxy-s24-fe-s721-525643-sm-s721blbbafb-thumb-543851963?$UX_EXT2_PNG$"
@@ -123,27 +139,42 @@
         </div>
         <div class="auctions-section">
           <h1 class="section-title">Featured Auctions</h1>
-          <div class="list-section">
+          <div class="list-section" id="auctions">
             <div class="auction">
-              <img class="auction-thumbnail" src="resources/doggo1.jpg" alt="" srcset="">
+              <img
+                class="auction-thumbnail"
+                src="resources/doggo1.jpg"
+                alt=""
+                srcset=""
+              />
               <div class="description">
                 <h2>George este un caine mare de licitat</h2>
                 <span>Ends on: Tuesday, 25 Feb 2025 at 10:00PM</span>
                 <span>Current Bid: 45 RON</span>
               </div>
             </div>
-  
+
             <div class="auction">
-              <img class="auction-thumbnail" src="resources/doggo1.jpg" alt="" srcset="">
+              <img
+                class="auction-thumbnail"
+                src="resources/doggo1.jpg"
+                alt=""
+                srcset=""
+              />
               <div class="description">
-                <h2>Salut, alksdjlksadjlksadjsal alksdjalksdjlkasj </h2>
+                <h2>Salut, alksdjlksadjlksadjsal alksdjalksdjlkasj</h2>
                 <span>Ends on: Tuesday, 25 Feb 2025 at 10:00PM</span>
                 <span>Current Bid: 45 RON</span>
               </div>
             </div>
-  
+
             <div class="auction">
-              <img class="auction-thumbnail" src="resources/doggo1.jpg" alt="" srcset="">
+              <img
+                class="auction-thumbnail"
+                src="resources/doggo1.jpg"
+                alt=""
+                srcset=""
+              />
               <div class="description">
                 <h2>Caine de rasa pura</h2>
                 <span>Ends on: Tuesday, 25 Feb 2025 at 10:00PM</span>
@@ -152,7 +183,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
