@@ -51,7 +51,36 @@
       <button class="search-button">Search</button>
       <div class="dropdown-menu" id="closed">More filters</div>
     </div>
-    <div class="page-body"></div>
+    <div class="main-section">
+      <div class="overview-section">
+        <img class="auction-image" src="resources/doggo1.jpg" alt="" />
+        <div class="main-info">
+          <h1 id="auction-title">Caine de vanzare</h1>
+          <div class="description-section">
+            <span>Description</span>
+            <pre id="auction-description">
+Câine de rasă pură, Bichon Maltez.
+Este un caine foarte dragalas, si cuminte.
+Varsta: 2 ani.</pre
+            >
+          </div>
+          <h1>Bid information</h1>
+          <div class="bid-info">
+            <span id="current-bid">Current bid: RON 35</span>
+            <span id="bid-increment">Minimum bid increment: RON 5 </span>
+            <div class="place-bid-section">
+              <input
+                type="number"
+                name="bid"
+                id="bid-input"
+                placeholder="Enter amount"
+              />
+              <button id="bid-button">Bid</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>

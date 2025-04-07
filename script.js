@@ -23,20 +23,30 @@ let categories = document.querySelectorAll(".category");
 
 // Add link to homepage
 let linkToHomepage = document.querySelector("#link-to-home");
-if(linkToHomepage !== null) {
-  linkToHomepage.addEventListener('click', (event) => {
+if (linkToHomepage !== null) {
+  linkToHomepage.addEventListener("click", (event) => {
     event.preventDefault();
     window.location = "./home-page.html";
-  })
+  });
 }
 
 // Redirect Electronics category
 // TODO: Make all categories redirect to the proper page
 let electronicsCategory = document.querySelector("#Electronics");
-if(electronicsCategory !== null) {
-  electronicsCategory.addEventListener('click', (event) => {
+if (electronicsCategory !== null) {
+  electronicsCategory.addEventListener("click", (event) => {
     event.preventDefault();
     window.location = "./category-page.html";
-  })
+  });
 }
 
+// Add link to auction pages
+let auctions = document.querySelectorAll(".auction");
+if (auctions !== null) {
+  auctions.forEach((auction) => {
+    auction.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location = "./product-page.html";
+    });
+  });
+}
