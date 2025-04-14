@@ -160,7 +160,7 @@ img#user-image {
 .list-section {
   display: grid;
   gap: 2em;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* justify-content: center; */
 }
 
@@ -266,7 +266,7 @@ img#user-image {
 }
 
 .description > span {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
 }
 
@@ -361,4 +361,17 @@ img#user-image {
 #bid-button {
   padding: 1em;
   border-radius: 1em;
+}
+
+.btn-view-auction {
+  width: 80%;
+  align-self: center;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--other-color);
+}
+
+.btn-view-auction:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
 }
